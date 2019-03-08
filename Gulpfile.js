@@ -12,7 +12,7 @@ var prefixerOptions = {
 	browsers: ['last 3 versions']
 };
 gulp.task( 'sass', function() {
-	gulp.src( 'src/assets/sass/style.scss' )
+	gulp.src( 'assets/sass/style.scss' )
 	.pipe( sourcemaps.init())
 	.pipe( sass({outputStyle: 'compressed'}).on('error', sass.logError) )
 	.pipe( sourcemaps.write( './assets/maps' ) )
@@ -21,7 +21,7 @@ gulp.task( 'sass', function() {
 
 //JavaScript
 var jsFiles = [
-	'src/assets/js/scripts.js'
+	'assets/js/scripts.js'
 ];
 gulp.task( 'javascript', function() {
 	gulp.src( jsFiles )

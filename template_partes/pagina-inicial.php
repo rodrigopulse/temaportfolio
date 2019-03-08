@@ -1,1 +1,2 @@
-<?php echo 'Hello World'; ?>
+<div class="destaque">
+</div>
