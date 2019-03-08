@@ -1,0 +1,33 @@
+html, body {
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	position: relative;
+	line-height: 1.15;
+}
+iframe, embed, object, video, img {
+	max-width: 100%;
+}
+img {
+	height: auto;
+}
+a, button {
+	cursor: pointer;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+  
+.video-container iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
