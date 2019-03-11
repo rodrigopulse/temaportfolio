@@ -42,7 +42,7 @@ function add_estilos_e_scripts() {
 	wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.3.1.min.js', array(), '3.3.1', true );
     wp_enqueue_script( 'jquery');
     if(is_home()) {
-        wp_enqueue_script( 'parallax', get_template_directory_uri() . '/parallax.js', array(), '', true );
+        wp_enqueue_script( 'parallax', get_template_directory_uri() . '/assets/js/parallax.js', array(), '', true );
     }
 	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/scripts.js', array(), '', true );
 }

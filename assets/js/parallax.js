@@ -12,7 +12,7 @@
             if(visible) {
             var diff = scrolled - initY
             var ratio = Math.round((diff / height) * 100)
-            $(this).css('background-position','center ' + parseInt(-(ratio * 1.5)) + 'px')
+            $(this).css('background-position','center ' + parseInt(-(ratio * 2.5)) + 'px')
             }
         });
     });
