@@ -35,8 +35,8 @@ gulp.task( 'default', [ 'sass', 'javascript' ] );
 
 // Watch
 gulp.task('watch', function() {
-    gulp.watch( 'src/assets/sass/**/*.scss', ['sass'] );
-    gulp.watch( 'src/assets/sass/style.scss', ['sass'] );
+    gulp.watch( './assets/sass/**/*.scss', ['sass'] );
+    gulp.watch( './assets/sass/style.scss', ['sass'] );
     gulp.watch( jsFiles, ['javascript'] );
 } );
 

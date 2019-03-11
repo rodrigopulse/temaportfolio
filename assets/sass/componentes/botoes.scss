@@ -1,0 +1,49 @@
+.botao-padrao {
+    width: auto;
+    height: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    color: $cor-texto;
+    @media screen and (min-width: 720px) {
+        text-decoration: none;
+    }
+    &__risca {
+        width: 52px;
+        height: 2px;
+        position: relative;
+        background: $cor-texto;
+        display: block;
+        margin: 0 12px 0 0;
+        padding: 0;
+        left: 0;
+    }
+    &--branco {
+        color: #fff;
+        .botao-padrao__risca {
+            background: #fff;
+        }
+    }
+}
+.botao-hamburguer {
+    background: none;
+    border: 0;
+    span {
+        border-radius: 10px;
+        background: #fff;
+        height: 5px;
+        display: block;
+        position: relative;
+        margin-bottom: 5px;
+    }
+    span:nth-child(1) {
+        width: 34px;
+    }
+    span:nth-child(2) {
+        width: 42px;
+    }
+    span:nth-child(3) {
+        width: 24px;
+    }
+}

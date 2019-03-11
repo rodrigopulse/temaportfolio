@@ -1,1 +1,1 @@
-jQuery(document).ready(function(){console.log("Bem vindo ao tema wordpress Zero")});
+jQuery(document).ready(function(){});

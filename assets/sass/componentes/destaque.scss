@@ -2,11 +2,43 @@
     width: 100%;
     min-height: 90%;
     height: auto;
-    display: block;
+    display: flex;
     position: relative;
+    align-items: center;
     top: 0;
     left: 0;
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    &__conteudo {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        display: block;
+        position: relative;
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+        @media screen and (min-width: 720px) {
+            margin: 0;
+            padding: 90px 40px;
+            text-align: left;
+        }
+    }
+    &__titulo {
+        font-size: 26px;
+        color: $cor-primaria;
+        line-height: 1.2;
+    }
+    &__subtitulo {
+        font-size: 53px;
+        color: #fff;
+        line-height: 1.2;
+    }
+    &__descricao {
+        font-size: 22px;
+        line-height: 1.2;
+        color: #fff;
+    }
 }

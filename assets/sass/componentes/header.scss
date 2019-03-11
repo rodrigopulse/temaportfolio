@@ -1,0 +1,11 @@
+.topo-principal {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    z-index: 9;
+    @media screen and (min-width: 720px) {
+        padding: 40px;
+    }
+}

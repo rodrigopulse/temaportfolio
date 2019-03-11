@@ -1,0 +1,11 @@
+.row--sessoes {
+    margin: 0 auto;
+    @media screen and (min-width: 720px) {
+        max-width: 1200px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+.bg-cor-primaria {
+    background: $cor-primaria;
+}

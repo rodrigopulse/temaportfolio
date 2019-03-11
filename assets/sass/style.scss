@@ -15,6 +15,12 @@
 @import "base/resets";
 @import "base/fontes";
 
+//Bibliotecas
+@import "../bibliotecas/bootstrap/bootstrap-grid";
+
 // Componentes
+@import "componentes/grid";
+@import "componentes/botoes";
+@import "componentes/header";
 @import "componentes/destaque";
 // Layout
