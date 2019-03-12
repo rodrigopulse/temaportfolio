@@ -1,0 +1,26 @@
+.titulo-padrao-sessao {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    h3 {
+        color: $cor-primaria;
+        margin: 0;
+        padding: 0;
+        font-size: 22px;
+    }
+    h4 {
+        color: #333;
+        margin: 0;
+        padding: 0;
+        font-size: 62px;
+    }
+    &--escuro {
+        h3 {
+            color: #333;
+        }
+        h4 {
+            color: #fff;
+        }
+    }
+}

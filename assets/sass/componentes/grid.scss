@@ -6,6 +6,15 @@
         padding-bottom: 60px;
     }
 }
+.row--max-width {
+    margin: 0 auto;
+    @media screen and (min-width: 720px) {
+        max-width: 1200px;
+    }
+}
 .bg-cor-primaria {
     background: $cor-primaria;
+    p, ul {
+        color: #fff;
+    }
 }
