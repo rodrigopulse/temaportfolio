@@ -104,4 +104,54 @@
             </div>
         </div>
     </div>
+    <div class="swiper-container row--max-width">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/php.png" alt="PHP">
+                <h3 class="swiper-titulo">PHP</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/javascript.png" alt="JavaScript">
+                <h3 class="swiper-titulo">Java Script</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/css.png" alt="CSS">
+                <h3 class="swiper-titulo">CSS</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/wordpress.png" alt="Wordpress">
+                <h3 class="swiper-titulo">Wordpress</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/git.png" alt="Git">
+                <h3 class="swiper-titulo">Git</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/photoshop.png" alt="Photoshop">
+                <h3 class="swiper-titulo">Photoshop</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/illustrator.png" alt="Illustrator">
+                <h3 class="swiper-titulo">Illustrator</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/after-effects.png" alt="After Effects">
+                <h3 class="swiper-titulo">After Effects</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/premiere.png" alt="Premiere">
+                <h3 class="swiper-titulo">Premiere</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/cinema-4d.png" alt="Cinema 4d">
+                <h3 class="swiper-titulo">Cinema 4d</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/zbrush.png" alt="ZBrush">
+                <h3 class="swiper-titulo">ZBrush</h3>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
 </div>

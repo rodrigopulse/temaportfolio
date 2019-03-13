@@ -31,7 +31,8 @@ remove_action('wp_print_styles', 'print_emoji_styles');
  * Adiciona os estilos e scripts do tema
  */
 function add_estilos_e_scripts() {
-	// Estilos
+    // Estilos
+    wp_enqueue_style( 'swipercss', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.min.css');
 	wp_enqueue_style( 'css', get_template_directory_uri() . '/style.css');
 	
 	// Fontes
@@ -41,7 +42,9 @@ function add_estilos_e_scripts() {
 	wp_deregister_script( 'jquery' );
 	wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.3.1.min.js', array(), '3.3.1', true );
     wp_enqueue_script( 'jquery');
+    wp_enqueue_script( 'swiperjs', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.min.js', array(), '', true );
     if(is_home()) {
+        // Parallax
         wp_enqueue_script( 'parallax', get_template_directory_uri() . '/assets/js/parallax.js', array(), '', true );
     }
 	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/scripts.js', array(), '', true );
