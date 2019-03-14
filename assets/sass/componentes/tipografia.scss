@@ -23,9 +23,18 @@
             color: #fff;
         }
     }
+    &--mais-escuro {
+        h3 {
+            color: $cor-primaria;
+        }
+        h4 {
+            color: #fff!important;
+        }
+    }
 }
 .lista-limpa {
     list-style: none;
+    padding: 0;
     li {
         margin-bottom: 10px;
     }

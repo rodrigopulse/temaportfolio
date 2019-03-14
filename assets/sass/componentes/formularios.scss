@@ -1,0 +1,30 @@
+//contact-form-7
+.wpcf7-text {
+    padding: 15px 10px 4px 10px;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    background: none;
+    margin-bottom: 15px;
+    width: 100%;
+    ::placeholder {
+        color: #d6d4d4;
+    }
+}
+.wpcf7-textarea {
+    width: 100%;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    padding: 15px 10px 4px 10px;
+}
+.wpcf7-submit {
+    border: 0;
+    background: #fff;
+    padding: 14px;
+    color: $cor-primaria;
+}
+div.wpcf7 {
+    margin: 0 auto;
+    width: 100%;
+}
