@@ -8,13 +8,19 @@
     @media screen and (min-width: 720px) {
         padding: 40px;
     }
+    .titulo-site {
+        padding-left: 30px;
+        font-size: 24px;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        text-decoration: none;
+    }
     &__container {
         width: 100%;
-        max-width: 1200px;
         margin: 0 auto;
         display: flex;
         position: relative;
-
+        align-items: center;
     }
     .botao-hamburguer {
         background: none;
@@ -39,6 +45,9 @@
     }
     &--conteudo {
         position: relative;
+        .titulo-site {
+            color: #333;
+        }
         .botao-hamburguer {
             span {
                 background: #333;

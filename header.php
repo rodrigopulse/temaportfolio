@@ -13,11 +13,14 @@
 		$classeTopo = 'topo-principal--conteudo';
 	} ?>
 	<header class="topo-principal <?php echo $classeTopo; ?>">
-		<div class="topo-principal__conteudo">
+		<div class="topo-principal__container">
 			<button class="botao-hamburguer">
 				<span></span>
 				<span></span>
 				<span></span>
 			</button>
+			<a href="<?php bloginfo( 'url_site' ); ?>" class="titulo-site">
+				Rodrigo Godoy
+			</a>
 		</div>
 	</header>
