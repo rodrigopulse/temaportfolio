@@ -1,4 +1,5 @@
-<?php
+<?php /* Template Name: Página Inicial */
+    get_header();
     $templateUrl = get_bloginfo( 'template_url' );
     if( wp_is_mobile() ) {
         $thumbDestaque = $templateUrl.'/assets/imagens/topo-mobile.jpg';
@@ -151,3 +152,4 @@
         <div class="swiper-pagination"></div>
     </div>
 </div>
+<?php get_footer();?>
