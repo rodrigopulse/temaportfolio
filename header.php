@@ -8,6 +8,7 @@
 </head>
 <body <?php body_class(); ?>>
 	<?php
+	$enderecoSite = get_site_url();
 	$classeTopo = '';
 	if( !is_home() ) {
 		$classeTopo = 'topo-principal--conteudo';
@@ -19,7 +20,7 @@
 				<span></span>
 				<span></span>
 			</button>
-			<a href="<?php bloginfo( 'url_site' ); ?>" class="titulo-site">
+			<a href="<?php echo $enderecoSite; ?>" class="titulo-site">
 				Rodrigo Godoy
 			</a>
 		</div>
