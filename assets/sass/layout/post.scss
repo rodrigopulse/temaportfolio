@@ -1,13 +1,44 @@
 .container-post {
     padding: 40px;
     background: #fff;
-    max-width: 720px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    padding: 20px;
+    @media screen and (min-width: 1230px) {
+        margin-bottom: 0;
+        padding: 40px;
+    }
     .titulo-do-post {
-        font-size: 28px;
+        font-size: 24px;
         color: #333;
         @media screen and (min-width: 720px) {
-            font-size: 48px;
+            font-size: 28px;
         }
+    }
+    .subtitulo-do-post {
+        font-size: 22px;
+        color: #333;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        @media screen and (min-width: 720px) {
+            font-size: 20px;
+        }
+    }
+    .container-titulo-post {
+        width: 100%;
+        position: relative;
+        max-width: 720px;
+        margin: 0 auto;
+        @media screen and (min-width: 1230px) {
+            max-width: 256px;
+            padding: 0 20px 0 40px;
+            position: fixed;
+            left: 0;
+        }
+    }
+    .post-content {
+        display: block;
+        position: relative;
+        max-width: 720px;
+        margin: 0 auto;
     }
 }
