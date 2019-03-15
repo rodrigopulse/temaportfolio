@@ -7,10 +7,17 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<header class="topo-principal">
-		<button class="botao-hamburguer">
-			<span></span>
-			<span></span>
-			<span></span>
-		</button>
+	<?php
+	$classeTopo = '';
+	if( !is_home() ) {
+		$classeTopo = 'topo-principal--conteudo';
+	} ?>
+	<header class="topo-principal <?php echo $classeTopo; ?>">
+		<div class="topo-principal__conteudo">
+			<button class="botao-hamburguer">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
 	</header>

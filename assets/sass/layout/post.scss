@@ -1,0 +1,13 @@
+.container-post {
+    padding: 40px;
+    background: #fff;
+    max-width: 720px;
+    margin-bottom: 40px;
+    .titulo-do-post {
+        font-size: 28px;
+        color: #333;
+        @media screen and (min-width: 720px) {
+            font-size: 48px;
+        }
+    }
+}

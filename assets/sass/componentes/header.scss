@@ -5,10 +5,44 @@
     top: 0;
     padding: 20px;
     z-index: 9;
-    max-width: 1200px;
-    left: 50%;
-    transform: translateX(-50%);
     @media screen and (min-width: 720px) {
         padding: 40px;
+    }
+    &__container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+
+    }
+    .botao-hamburguer {
+        background: none;
+        border: 0;
+        span {
+            border-radius: 10px;
+            background: #fff;
+            height: 5px;
+            display: block;
+            position: relative;
+            margin-bottom: 5px;
+        }
+        span:nth-child(1) {
+            width: 34px;
+        }
+        span:nth-child(2) {
+            width: 42px;
+        }
+        span:nth-child(3) {
+            width: 24px;
+        }
+    }
+    &--conteudo {
+        position: relative;
+        .botao-hamburguer {
+            span {
+                background: #333;
+            }
+        }
     }
 }
