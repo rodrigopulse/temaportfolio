@@ -50,7 +50,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid wrapper-portfolio">
     <div class="row row--sessoes">
         <div class="col-sm-12">
             <div class="titulo-padrao-sessao">

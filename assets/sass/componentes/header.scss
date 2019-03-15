@@ -5,6 +5,9 @@
     top: 0;
     padding: 20px;
     z-index: 9;
+    max-width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
     @media screen and (min-width: 720px) {
         padding: 40px;
     }
