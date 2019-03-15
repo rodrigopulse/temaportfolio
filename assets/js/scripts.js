@@ -7,6 +7,12 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            }
         });
     } ); //document.ready
 } )( jQuery );

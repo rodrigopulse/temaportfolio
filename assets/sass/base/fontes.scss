@@ -10,6 +10,14 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	color: $cor-texto;
 }
+p {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	line-height: 1.4;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
 h1, h2, h3, h4 {
 	font-family: 'Montserrat', sans-serif;
 }

@@ -2,11 +2,12 @@
     width: auto;
     height: auto;
     padding: 10px 0;
-    display: flex;
+    display: block;
     align-items: center;
     text-decoration: underline;
     color: $cor-texto;
     @media screen and (min-width: 720px) {
+        display: flex;
         text-decoration: none;
     }
     &__risca {
@@ -14,10 +15,13 @@
         height: 2px;
         position: relative;
         background: $cor-texto;
-        display: block;
         margin: 0 12px 0 0;
         padding: 0;
         left: 0;
+        display: none;
+        @media screen and (min-width: 720px) {
+            display: block;
+        }
     }
     &--branco {
         color: #fff;

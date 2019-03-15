@@ -1,7 +1,7 @@
 <?php
     $templateUrl = get_bloginfo( 'template_url' );
     if( wp_is_mobile() ) {
-        $thumbDestaque = '';
+        $thumbDestaque = $templateUrl.'/assets/imagens/topo-mobile.jpg';
     } else {
         $thumbDestaque = $templateUrl.'/assets/imagens/topo-desktop.jpg';
     }
@@ -75,13 +75,13 @@
                 <div class="col-md-3 bloco-portfolio">
                     <a href="<?php echo $linkPost; ?>">
                         <div class="bloco-portfolio__container">
+                            <img src="<?php echo $thumbPost; ?>" alt="<?php echo $tituloPost; ?>">
                             <div class="bloco-portfolio__hover">
                                 <div class="bloco-portfolio__conteudo">
                                     <span class="bloco-portfolio__tag">#<?php echo $tagPost[0]->name; ?></span>
                                     <h3 class="bloco-portfolio__titulo"><?php echo $tituloPost; ?></h3>
                                 </div>
                             </div>
-                            <img src="<?php echo $thumbPost; ?>" alt="<?php echo $tituloPost; ?>">
                         </div>
                     </a>
                 </div>
@@ -90,7 +90,7 @@
             wp_reset_postdata();
         ?>
     </div>
-    <div class="container">
+    <div class="container wrapper-portfolio__container-botao-mais">
         <a class="botao-padrao" href="">
             <div class="botao-padrao__risca"></div>
             Mais Projetos

@@ -1,1 +1,1 @@
-jQuery(document).ready(function(){new Swiper(".swiper-container",{slidesPerView:7,spaceBetween:20,pagination:{el:".swiper-pagination",clickable:!0}})});
+jQuery(document).ready(function(){new Swiper(".swiper-container",{slidesPerView:7,spaceBetween:20,pagination:{el:".swiper-pagination",clickable:!0},breakpoints:{640:{slidesPerView:2,spaceBetween:20}}})});

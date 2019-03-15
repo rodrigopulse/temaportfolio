@@ -5,8 +5,12 @@
     padding-bottom: 30px;
 }
 .swiper-titulo {
+    font-size: 18px;
     color: #fff;
     text-align: center;
+    @media screen and (min-width: 720px) {
+        font-size: 28px;
+    }
 }
 .swiper-pagination-bullet-active {
     background: #fff;

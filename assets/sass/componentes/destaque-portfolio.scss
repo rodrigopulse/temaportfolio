@@ -1,8 +1,22 @@
 .wrapper-portfolio {
     padding-bottom: 50px;
+    a {
+        text-decoration: none;
+    }
+    &__container-botao-mais {
+        width: 100%;
+        text-align: center;
+        @media screen and (min-width: 720px) {
+            text-align: left;
+        }
+    }
+
 }
 .bloco-portfolio {
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    @media screen and (min-width: 720px) {
+        margin-bottom: 30px;
+    }
     img {
         width: 100%;
         height: auto;
@@ -38,21 +52,33 @@
         width: 100%;
         height: auto;
         padding: 20px;
-        position: absolute;
+        position: relative;
         display: block;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
         text-align: center;
+        @media screen and (min-width: 720px) {
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
     }
     &__titulo {
         font-size: 20px;
-        color: #fff;
+        color: #333;
+        padding: 0;
+        margin: 0;
+        @media screen and (min-width: 720px) {
+            color: #fff;
+        }
     }
     &__tag {
         font-size: 16px;
-        color: #fff;
+        color: $cor-primaria;
+        margin-bottom: 15px;
+        @media screen and (min-width: 720px) {
+            color: #fff;
+        }
     }
 }

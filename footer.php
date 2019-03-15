@@ -7,7 +7,7 @@
             </div>
         </div>
     </div>
-    <div class="row row--sessoes"  style="max-width: 800px; margin: 0 auto;">
+    <div class="row row--sessoes container-formulario"  style="max-width: 800px; margin: 0 auto;">
         <?php echo do_shortcode('[contact-form-7 id="19" title="Formulário de contato"]'); ?>
     </div>
 </div>
