@@ -94,3 +94,56 @@ function preferencias_admin_bar() {
     echo $op;
 }
 
+/*
+ * Adds a Featured Post meta box to the post editing screen
+ */
+function blog_featured_meta() {
+    add_meta_box( 'blog_meta', __( 'Destaque na Home', 'blog-textdomain' ), 'blog_meta_callback', 'post', 'side', 'high' );
+}
+add_action( 'add_meta_boxes', 'blog_featured_meta' );
+/**
+ * Outputs the content of the meta box
+ */
+function blog_meta_callback( $post ) {
+    wp_nonce_field( basename( __FILE__ ), 'blog_nonce' );
+    $blog_stored_meta = get_post_meta( $post->ID );
+    ?>
+ <p>
+    <span class="blog-row-title">Adicionar esse post nos destaques de portfolio na home?</span>
+    <div class="blog-row-content">
+        <label for="featured-checkbox">
+            <input type="checkbox" name="featured-checkbox" id="featured-checkbox" value="yes" <?php if ( isset ( $blog_stored_meta['featured-checkbox'] ) ) checked( $blog_stored_meta['featured-checkbox'][0], 'yes' ); ?> />
+            Adicionar
+        </label>
+    </div>
+</p>
+
+<?php
+}
+
+/**
+ * Saves the custom meta input
+ */
+function blog_meta_save( $post_id ) {
+
+    // Checks save status - overcome autosave, etc.
+    $is_autosave = wp_is_post_autosave( $post_id );
+    $is_revision = wp_is_post_revision( $post_id );
+    $is_valid_nonce = ( isset( $_POST[ 'blog_nonce' ] ) && wp_verify_nonce( $_POST[ 'blog_nonce' ], basename( __FILE__ ) ) ) ? 'true' : 'false';
+
+    // Exits script depending on save status
+    if ( $is_autosave || $is_revision || !$is_valid_nonce ) {
+        return;
+    }
+
+// Checks for input and saves - save checked as yes and unchecked at no
+if( isset( $_POST[ 'featured-checkbox' ] ) ) {
+    update_post_meta( $post_id, 'featured-checkbox', 'yes' );
+} else {
+    update_post_meta( $post_id, 'featured-checkbox', 'no' );
+}
+
+}
+add_action( 'save_post', 'blog_meta_save' );
+
+

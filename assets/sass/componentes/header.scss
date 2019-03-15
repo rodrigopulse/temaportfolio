@@ -48,6 +48,29 @@
             width: 24px;
         }
     }
+    .botao-fechar {
+        padding: 24px;
+        position: absolute;
+        right: 45px;
+        top: 45px;
+        background: none;
+        border: 0;
+        span:nth-child(1) {
+            transform: rotate(45deg);
+        }
+        span:nth-child(2) {
+            transform: rotate(-45deg);
+            top: -5px;
+        }
+        span {
+            border-radius: 10px;
+            width: 50px;
+            height: 5px;
+            background: #333;
+            position: relative;
+            display: block;
+        }
+    }
     &--conteudo {
         position: relative;
         .titulo-site {

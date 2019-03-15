@@ -25,9 +25,16 @@
 				Rodrigo Godoy
 			</a>
 		</div>
-		<?php wp_nav_menu( array(
-			'theme_location' 	=> 'header-menu',
-			'container'			=> 'nav',
-			'menu_id'			=> 'menu'
-		) ); ?>
+		<nav class="menu">
+			<button class="botao-fechar js-fechar-menu">
+				<span></span>
+				<span></span>
+			</button>
+			<?php wp_nav_menu( array(
+				'theme_location' 	=> 'header-menu',
+				'container'			=> 'ul',
+				'menu_id'			=> 'menu-lista',
+				'menu_class'		=> 'menu-lista'
+			) ); ?>
+		</nav>
 	</header>

@@ -57,15 +57,23 @@
     <div class="row row--max-width">
         <?php
             $args = array(
-                'posts_per_page' => 8,
-                'category_name' => 'destaque-da-home' );
+                'post_type'         => 'post',
+                'posts_per_page'    => 8,
+                'meta_query' => array(
+                            array(
+                            'key' => 'featured-checkbox',
+                            'value' => 'yes'
+                        )
+                    )
+                );
 
             $destaque = get_posts( $args );
             foreach ( $destaque as $post ) { setup_postdata( $post );
                 $linkPost       = get_the_permalink();
                 $thumbPost      = get_the_post_thumbnail_url( $post, 'thumb-portfolio' );
                 $tituloPost     = get_the_title();
-                $tagPost        = get_the_tags( $post ); ?>
+                $tagPost        = get_the_tags( $post );
+                $categoriaPost  = get_the_category( $post ); ?>
 
                 <div class="col-md-3 bloco-portfolio">
                     <a href="<?php echo $linkPost; ?>">
@@ -73,7 +81,7 @@
                             <img src="<?php echo $thumbPost; ?>" alt="<?php echo $tituloPost; ?>">
                             <div class="bloco-portfolio__hover">
                                 <div class="bloco-portfolio__conteudo">
-                                    <span class="bloco-portfolio__tag">#<?php echo $tagPost[0]->name; ?></span>
+                                    <span class="bloco-portfolio__tag">#<?php echo $categoriaPost[0]->name; ?></span>
                                     <h3 class="bloco-portfolio__titulo"><?php echo $tituloPost; ?></h3>
                                 </div>
                             </div>

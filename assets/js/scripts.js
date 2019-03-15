@@ -2,7 +2,9 @@
     $( document ).ready( function(){
         //Menu
         $('.js-abrir-menu').on('click', function(){
-            $('.menu').toggleClass('menu-aberto');
+            $('.menu').toggleClass('menu--aberto');
+        });$('.js-fechar-menu').on('click', function(){
+            $('.menu').toggleClass('menu--aberto');
         });
         //Swiper
         var swiper = new Swiper('.swiper-container', {
