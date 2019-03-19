@@ -27,8 +27,7 @@
                 <h3>Serviços</h3>
                 <h4>O que eu faço</h4>
             </div>
-            <p>Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Vivamus quis mi. Curabitur suscipit suscipit tellus. Aenean vulputate eleifend tellus.</p>
-            <p>Donec mollis hendrerit risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Vestibulum eu odio. Sed a libero. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc.</p>
+            <p>Sou o Rodrigo Godoy, Designer, Videomaker e Programador, tenho 31 anos e atualmente trabalho como Designer de Interfaces e Desenvolvimento Web na empresa Catraca Livre. Sou apaixonado por arte e ilustração, por esse motivo me dediquei a todas as formas de criar. Passei por agências de publicidade e áreas de criação dentro de empresas, desde desenhos para estampas de tênis, layout para apps e sites, editando e filmando casamentos em produtoras, fotos publicitárias em capas de revistas, animações e vídeos para comerciais e vídeos documentais.</p>
             <ul class="lista-limpa">
                 <li>UX / UI e Desenvolvimento</li>
                 <li>3d / Vídeo e Motion</li>
@@ -128,6 +127,10 @@
                 <h3 class="swiper-titulo">Wordpress</h3>
             </div>
             <div class="swiper-slide">
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/cinema-4d.png" alt="Cinema 4d">
+                <h3 class="swiper-titulo">Cinema 4d</h3>
+            </div>
+            <div class="swiper-slide">
                 <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/git.png" alt="Git">
                 <h3 class="swiper-titulo">Git</h3>
             </div>
@@ -146,10 +149,6 @@
             <div class="swiper-slide">
                 <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/premiere.png" alt="Premiere">
                 <h3 class="swiper-titulo">Premiere</h3>
-            </div>
-            <div class="swiper-slide">
-                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/cinema-4d.png" alt="Cinema 4d">
-                <h3 class="swiper-titulo">Cinema 4d</h3>
             </div>
             <div class="swiper-slide">
                 <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/zbrush.png" alt="ZBrush">

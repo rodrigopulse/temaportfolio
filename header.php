@@ -11,7 +11,6 @@
 	$enderecoSite = get_site_url();
 	$classeTopo = '';
 	if( !is_page_template( 'page-pagina-inicial.php' ) ) {
-		die;
 		$classeTopo = 'topo-principal--conteudo';
 	} ?>
 	<header class="topo-principal <?php echo $classeTopo; ?>">

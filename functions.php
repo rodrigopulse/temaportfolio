@@ -15,7 +15,7 @@ add_theme_support( 'post-thumbnails' );
 /**
  * Tamanhos das imagens para thumbs
  */
-add_image_size( 'thumb-portfolio', 420, 420, true );
+add_image_size( 'thumb-portfolio', 360, 360, true );
 
 /**
  * Habilita o Title no wordpress
