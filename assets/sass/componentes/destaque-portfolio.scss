@@ -51,7 +51,7 @@
     &__conteudo {
         width: 100%;
         height: auto;
-        padding: 20px;
+        padding: 20px 20px 40px 20px;
         position: relative;
         display: block;
         text-align: center;
@@ -62,6 +62,7 @@
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             position: absolute;
+            padding: 20px;
         }
     }
     &__titulo {
