@@ -40,7 +40,7 @@
             </a>-->
         </div>
         <div class="col-md-4 col-sm-12">
-            <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/mockup-servicos.png'" alt="Serviços">
+            <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/mockup-servicos.png" alt="Serviços">
         </div>
     </div>
 </div>
