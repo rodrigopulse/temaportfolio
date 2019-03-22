@@ -57,7 +57,7 @@
         <?php
             $args = array(
                 'post_type'         => 'post',
-                'posts_per_page'    => 8,
+                'posts_per_page'    => -1,
                 'meta_query' => array(
                             array(
                             'key' => 'featured-checkbox',
@@ -93,7 +93,7 @@
         ?>
     </div>
     <div class="container wrapper-portfolio__container-botao-mais">
-        <a class="botao-padrao" href="">
+        <a class="botao-padrao" href="http://rodrigogodoy.com.br/portfolio">
             <div class="botao-padrao__risca"></div>
             Mais Projetos
         </a>
