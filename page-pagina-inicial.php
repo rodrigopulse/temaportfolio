@@ -13,7 +13,7 @@
             Design e Tecnologia
         </h1>
         <h2 class="destaque__subtitulo">
-            UX / UI / DESENVOLVIMENTO / 3d / VÍDEO / MOTION
+            UX / UI / Front-end
         </h2>
         <h3 class="destaque__descricao">
             Tire seus projetos do papel e dê vida para eles.
@@ -27,17 +27,15 @@
                 <h3>Serviços</h3>
                 <h4>O que eu faço</h4>
             </div>
-            <p>Sou o Rodrigo Godoy, Designer, Videomaker e Programador, tenho 31 anos e atualmente trabalho como Designer de Interfaces e Desenvolvimento Web na empresa Catraca Livre. Sou apaixonado por arte e ilustração, por esse motivo me dediquei a todas as formas de criar. Passei por agências de publicidade e áreas de criação dentro de empresas, desde desenhos para estampas de tênis, layout para apps e sites, editando e filmando casamentos em produtoras, fotos publicitárias em capas de revistas, animações e vídeos para comerciais e vídeos documentais.</p>
+            <p>Me chamo Rodrigo Godoy, sou Designer de Interfaces e Desenvolvedor Front-end, tenho 32 anos e atualmente trabalho na empresa Catraca Livre, onde crio todos os layouts do site, além de ser responsável pelo código front-end do portal.</p>
+            <p>Já trabalhei na área de criação de diversas empresas e em agências de publicidade, criando sites, apps, sistemas, e-commerces, etc.</p>
+            <p>Desde os 13 anos, quando fiz meu primeiro site, sou vidrado no mundo da criação para web.</p>
             <ul class="lista-limpa">
-                <li>UX / UI e Desenvolvimento</li>
+                <li>UX / UI e Front-end</li>
                 <li>3d / Vídeo e Motion</li>
                 <li>Design e Branding</li>
                 <li>Social</li>
             </ul>
-            <!--<a class="botao-padrao botao-padrao--branco" href="">
-                <div class="botao-padrao__risca"></div>
-                Saiba Mais
-            </a>-->
         </div>
         <div class="col-md-4 col-sm-12">
             <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/mockup-servicos.png" alt="Serviços">
@@ -111,8 +109,12 @@
     <div class="swiper-container row--max-width">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/php.png" alt="PHP">
-                <h3 class="swiper-titulo">PHP</h3>
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/adobe-xd.png" alt="Adobe XD">
+                <h3 class="swiper-titulo">Adobe XD</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/sketch.png" alt="Sketch">
+                <h3 class="swiper-titulo">Sketch</h3>
             </div>
             <div class="swiper-slide">
                 <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/javascript.png" alt="JavaScript">
@@ -125,6 +127,10 @@
             <div class="swiper-slide">
                 <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/wordpress.png" alt="Wordpress">
                 <h3 class="swiper-titulo">Wordpress</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/php.png" alt="PHP">
+                <h3 class="swiper-titulo">PHP</h3>
             </div>
             <div class="swiper-slide">
                 <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/cinema-4d.png" alt="Cinema 4d">
@@ -149,10 +155,6 @@
             <div class="swiper-slide">
                 <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/premiere.png" alt="Premiere">
                 <h3 class="swiper-titulo">Premiere</h3>
-            </div>
-            <div class="swiper-slide">
-                <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/skills/zbrush.png" alt="ZBrush">
-                <h3 class="swiper-titulo">ZBrush</h3>
             </div>
         </div>
         <!-- Add Pagination -->
