@@ -36,6 +36,10 @@
                 <li>Design e Branding</li>
                 <li>Social</li>
             </ul>
+            <a class="botao-padrao botao-padrao--branco" href="http://rodrigogodoy.com.br/sobre">
+                <div class="botao-padrao__risca"></div>
+                Saiba Mais
+            </a>
         </div>
         <div class="col-md-4 col-sm-12">
             <img src="<?php bloginfo( 'template_url' ); ?>/assets/imagens/mockup-servicos.png" alt="Serviços">
